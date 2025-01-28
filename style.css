@@ -1,0 +1,72 @@
+:root{
+    --background-color: #0F1212;
+    --text-color: #D4D4D4;
+    --text-comment-color: #7E838D;
+    --text-tag-color: #EF596F;
+    /* --link-color: #2BBAC5; */
+    --link-color: #649edd;
+    /* --link-hover-color: #238990; */
+    --link-hover-color: #88b8ec;
+    --container-width: 850px;
+}
+
+*{
+    font-size: 20px;
+    font-weight: bold;
+    cursor:text;
+}
+
+html{
+    font-family: "Fira Code", Consolas, "Courier New", monospace;
+    line-height: 1.25;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    white-space: pre;
+    color: var(--text-comment-color);
+}
+
+h1>b{
+    color: var(--text-color);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--link-hover-color);
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    margin-bottom: 6px;
+}
+
+li>a>span{
+    color: var(--text-tag-color);
+    cursor: pointer;
+}
+
+.container{
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+.json{
+    white-space: pre;
+}
